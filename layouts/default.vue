@@ -7,7 +7,20 @@
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+
 export default {
+  head() {
+    return {
+      titleTemplate: '%s Real World Events',
+      meta: [
+        {
+          hid: 'desciption',
+          name: 'description',
+          content: 'View Events Nuxt App'
+        }
+      ]
+    }
+  },
   components: {
     NavBar
   }
